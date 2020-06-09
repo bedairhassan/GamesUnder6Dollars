@@ -13,14 +13,11 @@ function App() {
 
   return (
     <React.Fragment>
-      All Data <br/>
-      <Table data={data} headers={[`name`,`price`]}/>
+      
 
       Games Under 6$ <br/>
-      <Table data={data.filter(obj=>obj.price<6)} headers={[`name`,`price`]}/>
+      <Table data={data.filter(obj=>obj.price<6)} headers={[`image`,`name`,`price`]}/>
 
-      Games Cost $60 <br/>
-      <Table data={data.filter(obj=>obj.price===60)} headers={[`name`,`price`]}/>
     </React.Fragment>
   );
 }
